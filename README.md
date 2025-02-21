@@ -1,59 +1,36 @@
-# VenueManagementSystem
+# Venue Management System
+Venue Management System (VMS) is a web application developed using Angular Framework. This project is specifically developed for Educational Institutions like Universities, where there are many student clubs and professional chapters. The end users are divided into three categories
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+1. **Admin** - Admin can perform CRUD (Create-Retrieve-Update-Delete) operations on the database
 
-## Development server
+2. **Faculty Coordinator** - A Faculty Coordinator is incharge for specific club. Faculty coordinator can make booking requests for available venues to the respective venue incharges, to conduct their event
 
-To start a local development server, run:
+3. **Venue Incharge** - A Venue Incharge can view the booking requests received and approve/reject them as per venue availability
 
+# Run project in your computer
+To run the project in your computer, follow the steps given below
+
+1. **Clone repository in local system**:
+Open Terminal, navigate to folder where you would like to clone repository and execute the following command
+```bash
+git clone https://github.com/KARTHIK-RAO-4572/Venue-Management-System.git
+```
+
+2. **Install dependencies**
+In terminal, navigate to the folder *Venue-Management-System* and execute the following command
+```bash
+npm install
+```
+
+3. **Run JSON Server**
+The projects includes a JSON file named, "db.json" at path *Venue-Management-System/src/app/databases*. This JSON file acts as database for the project. To run the JSON server, open new terminal window, navigate to above mentioned path and execute the following command
+```bash
+json-server --watch db.json
+```
+
+4. **Run Project**
+Execute the following command and open [http://localhost:4200](http://localhost:4200) in browser
 ```bash
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Note:** To view admin page, visit [http://localhost:4200/admin](http://localhost:4200/admin)
