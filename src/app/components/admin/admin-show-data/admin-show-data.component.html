@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th *ngFor="let key of keys">{{key}}</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of data">
+            <td *ngIf="isFaculty">{{item.facultyId}}</td>
+            <td *ngIf="isFaculty">{{item.facultyName}}</td>
+            <td *ngIf="isFaculty">{{item.facultyContact}}</td>
+            <td *ngIf="isFaculty">{{item.facultyDepartment}}</td>
+            <td *ngIf="isFaculty">{{item.CoordinatorFor}}</td>
+            <td *ngIf="isAdmin">{{item.adminId}}</td>
+            <td *ngIf="isAdmin">{{item.adminName}}</td>
+            <td *ngIf="isAdmin">{{item.adminContact}}</td>
+            <td *ngIf="isVenueIncharge">{{item.venueInchargeId}}</td>
+            <td *ngIf="isVenueIncharge">{{item.venueInchargeName}}</td>
+            <td *ngIf="isVenueIncharge">{{item.venueInchargeContact}}</td>
+            <td *ngIf="isVenueIncharge">{{item.venueName}}</td>
+        </tr>
+    </tbody>
+</table>

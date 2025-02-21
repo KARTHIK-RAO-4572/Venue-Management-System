@@ -1,0 +1,82 @@
+{
+  "admins": [
+    {
+      "adminId": 101,
+      "adminName": "Admin 1",
+      "adminPassword": "admin1",
+      "adminContact": 9000000000,
+      "id": "d8bf"
+    },
+    {
+      "adminId": 102,
+      "adminName": "Admin 2",
+      "adminPassword": "admin2",
+      "adminContact": 5656565656,
+      "id": "151f"
+    }
+  ],
+  "facultyCoordinators": [
+    {
+      "facultyId": "201",
+      "facultyName": "Faculty 1",
+      "facultyPassword": "faculty1",
+      "facultyDepartment": "CSE",
+      "facultyContact": 9898989898,
+      "CoordinatorFor": "club1",
+      "id": "a4e9"
+    },
+    {
+      "id": "6471",
+      "facultyId": "202",
+      "facultyPassword": "faculty2",
+      "facultyName": "Faculty 2",
+      "facultyDepartment": "AI",
+      "facultyContact": 4567564578,
+      "CoordinatorFor": "club2"
+    }
+  ],
+  "venueIncharges": [
+    {
+      "venueId": 301,
+      "venueName": "E Block Auditorium",
+      "venueInchargeId": 401,
+      "venueInchargeName": "Incharge 1",
+      "venueInchargePassword": "incharge1",
+      "venueInchargeContact": 1111111111,
+      "id": "0bd8"
+    },
+    {
+      "venueId": 302,
+      "venueName": "D Block Auditorium",
+      "venueInchargeId": 402,
+      "venueInchargeName": "Incharge 2",
+      "venueInchargePassword": "incharge2",
+      "venueInchargeContact": 2222222222,
+      "id": "2005"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "03b5",
+      "eventStatus": "Approved",
+      "facultyId": "202",
+      "clubName": "club2",
+      "eventName": "Thunder Event",
+      "eventDate": "2025-02-28",
+      "venueRequested": "E Block Auditorium",
+      "facultyContact": 4567564578,
+      "venueInchargeContact": 1111111111
+    },
+    {
+      "id": "3c4f",
+      "eventStatus": "Pending",
+      "facultyId": "201",
+      "clubName": "club1",
+      "eventName": "Testing Event",
+      "eventDate": "2025-02-21",
+      "venueRequested": "D Block Auditorium",
+      "facultyContact": 9898989898,
+      "venueInchargeContact": 2222222222
+    }
+  ]
+}

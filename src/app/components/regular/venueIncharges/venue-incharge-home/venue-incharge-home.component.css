@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1,h3{
+    text-align: center;
+    margin: 5px auto; 
+}
+.book-event{
+    margin: 10px auto;
+    width:35vh;
+    height:15vh;
+    background-color: rgb(249, 240, 228);
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.book-event h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    margin-top: 1vh;
+}
+.book-event img{
+    width:20%;
+    height:45%;
+    margin-left:40%;
+    margin-top:7%;
+    cursor: pointer;
+}
+table{
+    
+    width:auto;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px auto;
+}
+table thead{
+    background-color: rgb(50, 102, 134);
+    color: white;
+}
+table tbody{
+    background-color: antiquewhite;
+}
+td,th{
+    border: 1px solid black;
+    text-align: center;
+    padding:2px;
+}
+
+#approve-btn{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(45, 235, 74);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#reject-btn{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}

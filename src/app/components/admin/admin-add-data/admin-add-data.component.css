@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+
+.container-fluid .form{
+    width: 25%;
+    border: 1px solid black;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: rgb(246, 247, 232);
+    border-radius: 15px;
+    position:static;
+}
+.container-fluid .form label{
+    display: block;
+    text-align: center;
+}
+
+.container-fluid .form select{
+    display: block;
+    width:100%;
+    margin: 25px auto;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.container-fluid .form h3{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-fluid .form input[type="submit"]{
+    background: linear-gradient(to right, #c31432, #240b36);
+    padding: 5px;
+    color:white;
+    border-radius: 7px;
+    font-weight: bold;
+    border:0px;
+    position: relative;
+    margin-left: 37%;
+}
+.container-fluid .form input[type="submit"]:hover{
+    background: linear-gradient(to right, #32e825, #5f8f70);
+    padding: 5px;;
+    padding: 5px;
+    color: white;
+    border-radius: 7px;
+    border:0px;
+}
+
+.container-fluid .form .inputs{
+    font-size: 15px;
+    width:100%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}

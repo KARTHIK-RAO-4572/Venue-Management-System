@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="intro">
+        <img src="https://anurag.edu.in/wp-content/uploads/2023/02/logo-white.png" height="5%" width="25%">
+    <h2>Venue Management System</h2>
+    </div>
+    
+        <form (ngSubmit)="onSubmit()" class="form">
+            <h5>Welcome Admin🙏</h5>
+            <h5>Login to Continue</h5>
+            <input type="text" [(ngModel)]="inputData.enteredId" name="enteredId" placeholder="Enter Admin ID" pattern="[0-9]{3}" required>
+            <input type="password" [(ngModel)]="inputData.enteredPassword" name="enteredPassword" placeholder="Enter Password" required>
+            <!-- <i class="fa-regular fa-eye"></i> -->
+            <input type="submit" value="Login">
+        </form>
+</div>
+

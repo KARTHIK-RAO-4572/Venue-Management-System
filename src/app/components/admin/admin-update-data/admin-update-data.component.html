@@ -1,0 +1,14 @@
+<div class="container-fluid">
+<form (ngSubmit)="onSubmit()" #myForm="ngForm" class="form">
+    <h3>Update Data</h3>
+    <label>Select Role of user you want to update</label>
+    <select name="role" [(ngModel)]="role" (change)="updateFields(myForm)">
+        <option value="admins">Admin</option>
+        <option value="facultyCoordinators">Faculty Coordinator</option>
+        <option value="venueIncharges">Venue Incharge</option>
+    </select>
+    <!-- Displaying Fields as per option -->
+     <input *ngFor="let field of fields;let i=index" name="inputData[{{i}}]" placeholder="Enter {{field}}" [(ngModel)]="inputData[i]" class="inputs">
+    <input type="submit" value="Update" class="btn btn-success">
+</form>
+</div>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", serif;
+
+}
+
+
+.container-fluid{
+    background: linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width:100vw;
+    display: block;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid .form{
+    width: 35%;
+    border: 1px solid black;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: rgb(246, 247, 232);
+    border-radius: 15px;
+}
+
+.container-fluid .form input{
+    display: block;
+    width:100%;
+    margin: 25px auto;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.container-fluid .form h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-fluid .form input[type="submit"]{
+    background: linear-gradient(to right, #c31432, #240b36);
+    padding: 5px;
+    color:white;
+    border-radius: 7px;
+    font-weight: bold;
+    border:0px;
+}
+.container-fluid .form input[type="submit"]:hover{
+    background: linear-gradient(to right, #32e825, #5f8f70);
+    padding: 5px;;
+    padding: 5px;
+    color: white;
+    border-radius: 7px;
+    border:0px;
+}
+
+i{
+    position:relative;
+    margin-left: 90%;
+    bottom: 50px;
+}
+
+.container-fluid .col button{
+    width: 46%;
+    margin: 0 auto;
+    padding: 3%;
+    margin: 0 2%;
+    font-weight: bold;
+    font-size: 90%;
+}
+/* .container-fluid h2{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    margin-top: 5%;
+} */
+.container-fluid h5{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    margin-top: 5%;
+}

@@ -1,0 +1,22 @@
+<app-admin-nav></app-admin-nav>
+<h1>Welcome {{adminName}}!!</h1>
+<div class="container-fluid">
+    <div class="get-data">
+    <form (ngSubmit)="onSubmit(appChild)" class="form">
+        <h3>Get Data</h3>
+        <label>Choose Database</label>
+        <select name="databaseName" [(ngModel)]="databaseName">
+            <option value="admins">Admin</option>
+            <option value="facultyCoordinators">Faculty Coordinator</option>
+            <option value="venueIncharges">Venue Incharge</option>
+        </select>
+        <input type="submit" value="GET DATA" >
+    </form>
+    <app-admin-show-data #appChild [data]="mydata" [role]="role" [keys]="keys"></app-admin-show-data>
+</div>
+<app-admin-add-data></app-admin-add-data>
+<div class="row">
+<app-admin-update-data></app-admin-update-data>
+<app-admin-delete-data></app-admin-delete-data>
+</div>
+</div>

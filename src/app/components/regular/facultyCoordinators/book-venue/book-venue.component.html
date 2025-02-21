@@ -1,0 +1,13 @@
+<app-admin-nav></app-admin-nav>
+<div class="container-fluid">
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm" class="form">
+        <h3>Book Venue</h3>
+        <label>Enter Event Details</label>
+         <input name="inputData.eventName" placeholder="Event Name" [(ngModel)]="inputData.eventName" class="inputs" required>
+         <input type="date" name="inputData.date" placeholder="Event Name" [(ngModel)]="inputData.eventDate" class="inputs" required>
+         <select name="venue" [(ngModel)]="inputData.venueRequested">
+            <option *ngFor="let venue of venues" value="{{venue.venueName}}">{{venue.venueName}}</option>
+         </select>
+        <input type="submit">
+    </form>
+    </div>

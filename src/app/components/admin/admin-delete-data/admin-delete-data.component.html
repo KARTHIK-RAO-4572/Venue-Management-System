@@ -1,0 +1,15 @@
+<div class="container-fluid">
+<form (ngSubmit)="onSubmit()" #myForm="ngForm" class="form">
+    <h3>Delete User</h3>
+    <label>Select Role of user you want to delete</label>
+    <br>
+    <select name="role" [(ngModel)]="role" (change)="updateFields(myForm)">
+        <option value="admins">Admin</option>
+        <option value="facultyCoordinators">Faculty Coordinator</option>
+        <option value="venueIncharges">Venue Incharge</option>
+    </select>
+    <br>
+    <input type="text" placeholder="Enter ID of user you want to delete" name="entered_id" [(ngModel)]="entered_id" class="inputs"> 
+    <input type="submit" value="delete">
+</form>
+</div>

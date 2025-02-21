@@ -1,0 +1,22 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+table{
+    width:auto;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px auto;
+}
+table thead{
+    background-color: brown;
+    color: white;
+}
+table tbody{
+    background-color: antiquewhite;
+}
+td,th{
+    border: 1px solid black;
+    text-align: center;
+    padding:2px;
+}

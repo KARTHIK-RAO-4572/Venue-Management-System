@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="intro">
+        <img src="https://anurag.edu.in/wp-content/uploads/2023/02/logo-white.png" height="5%" width="25%">
+    <h2>Venue Management System</h2>
+    </div>
+    
+        <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" class="form">
+            <h5>Welcome🙏</h5>
+            <h5>Select your Role</h5>
+            <div class="col">
+                <button id="facultyBtn" [style.background-color]="btn1Color"  (click)="updateRole(myForm,'faculty')">Faculty Coordinator</button>
+                <button id="venueBtn" [style.background-color]="btn2Color" (click)="updateRole(myForm)">Venue Incharge</button>
+            </div>
+                <input type="text" *ngIf="isFaculty" [(ngModel)]="inputData.enteredId" name="enteredId" placeholder="Enter Faculty ID" pattern="[0-9]{3}" required>
+                <input type="text" *ngIf="!isFaculty" [(ngModel)]="inputData.enteredId" name="enteredId" placeholder="Enter Incharge ID" pattern="[0-9]{3}" required>
+            <input type="password" [(ngModel)]="inputData.enteredPassword" name="enteredPassword" placeholder="Enter Password" required>
+            <input type="submit" value="Login">
+        </form>
+</div>
+

@@ -1,0 +1,30 @@
+<app-admin-nav></app-admin-nav>
+<h1>Welcome {{facultyName}}!!</h1>
+<div class="book-event">
+   <a href="faculty/book-venue"><img src="plus.png"></a>
+    <h5>Book Venue</h5>
+</div>
+<div class="bookings-status">
+    <table>
+        <thead>
+            <tr>
+                <th>S. No</th>
+                <th>Event Name</th>
+                <th>Event Date</th>
+                <th>Status</th>
+                <th>Remarks</th>
+                <th>Venue Incharge Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let booking of bookings;let i=index" [style.background-color]="showColor(bookings[i])">
+                <td>{{i+1}}</td>
+                <td>{{booking.eventName}}</td>
+                <td>{{booking.eventDate}}</td>
+                <td>{{booking.eventStatus}}</td>
+                <td>{{booking.remarks}}</td>
+                <td>{{booking.venueInchargeContact}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
